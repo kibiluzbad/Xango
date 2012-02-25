@@ -1,0 +1,20 @@
+﻿@model Blog.UI.Models.PostViewModel
+<article>  
+    <h1>@Html.DisplayFor(model => model.Title)</h1>
+    <span class="information">Posted by <b>@Html.DisplayFor(model => model.Author)</b>, on <i>@Html.DisplayFor(model => model.CreatedAt)</i> with <a href="#comments">@Model.Comments.Count() comments</a></span>
+    <p>@Html.DisplayFor(model => model.Body)</p>
+</article>
+<!-- -->
+<h2>Comments</h2>
+<ul class="comments">
+    @if (0 < Model.Comments.Count())
+    { 
+        @Html.DisplayFor(model => model.Comments)
+    }
+    else
+    { 
+        <p><strong>No comments.</strong></p>
+    }
+</ul>
+@Html.Partial("CommentViewModel", new Blog.UI.Models.CommentViewModel())
+<div class="clear" style="height:10px;"></div>

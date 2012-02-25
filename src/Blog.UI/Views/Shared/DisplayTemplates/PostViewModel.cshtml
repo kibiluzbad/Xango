@@ -1,0 +1,14 @@
+﻿@model Blog.UI.Models.PostViewModel
+<article>    
+    <div class="date">
+        <span class="day">@Html.DisplayFor(modelItem => modelItem.Day)</span>
+        <span class="month">@Html.DisplayFor(modelItem => modelItem.Month)</span>
+        <span class="year">@Html.DisplayFor(modelItem => modelItem.Year)</span>
+    </div>
+    <a href='@Url.Action("Details","Posts", new { id = Model.Slug})'><h3>@Html.DisplayFor(modelItem => modelItem.Title)</h3></a>
+    <p>@Html.DisplayFor(modelItem => modelItem.Body)</p>
+        <a href='@Url.Action("Details","Posts", new { id = Model.Slug })' class="more">read more &rarr;</a>
+        <a href='@Url.Action("Delete","Posts", new { id = Model.Slug })' data-message="You really wanna do this?" class="more delete">delete X</a>
+        <a href='@Url.Action("Edit", "Posts", new { id = Model.Slug })' class="more edit">edit [ ]</a>
+        <div class="clear"></div>
+</article>

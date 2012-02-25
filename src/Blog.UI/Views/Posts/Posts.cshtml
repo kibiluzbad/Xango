@@ -1,0 +1,8 @@
+﻿@using Ifa.Helpers
+@using Ifa.Model
+@model Ifa.Model.PagedResultViewModel<Blog.UI.Models.PostViewModel>
+@foreach (var item in Model.Result)
+{
+    @Html.DisplayFor(m => item)
+}
+@Html.LinkToNextPage(Model, (pages, index) => Url.Action("Index", new { pageNumber = index, itemsPerPage = pages }), new AjaxOptions { OnSuccess = "UpdatePostsArea" })

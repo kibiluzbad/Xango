@@ -1,0 +1,23 @@
+﻿@model Blog.UI.Models.CommentViewModel
+           
+@using (Ajax.BeginForm("Comment", "Posts", new { slug = (string)ViewBag.Slug }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "content", OnBegin="ajaxLoader" }, new { @class = "col_8 add_comment" }))
+{
+    @Html.ValidationSummary(true)
+
+    	<fieldset>	
+        	<legend>Add your comment:</legend>
+            <div>
+                @Html.LabelFor(c => c.Mail)
+            	@Html.TextBoxFor(c => c.Mail, htmlAttributes: new { @class = "box_shadow" })                
+            </div>
+            <div>
+            	@Html.LabelFor(c => c.Author)
+            	@Html.TextBoxFor(c => c.Author, htmlAttributes: new { @class = "box_shadow" })
+            </div>
+            <div class="textarea">
+            	@Html.LabelFor(c => c.Text)
+            	@Html.TextAreaFor(c => c.Text, htmlAttributes: new { @class = "box_shadow" })
+            </div>
+            <input type="submit" value="add comment &rarr;" />
+        </fieldset>
+}

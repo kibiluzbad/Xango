@@ -1,0 +1,54 @@
+﻿@using Xango.Mvc.AjaxAntiForgery
+<!DOCTYPE html>
+<html class=" js canvas canvastext geolocation crosswindowmessaging no-websqldatabase no-indexeddb hashchange historymanagement draganddrop no-websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow opacity no-cssanimations csscolumns cssgradients no-cssreflections csstransforms no-csstransforms3d csstransitions video audio localstorage sessionstorage webworkers applicationcache svg smil svgclippaths fontface">
+<head>
+	<title>Xangô Blog @ViewBag.Title</title>
+	<link href="@Url.Content("~/Content/reset.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/css3.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/general.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/grid.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/forms.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+	<script src="@Url.Content("~/Scripts/jquery-1.6.2.min.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/antiforgery-jquery.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/modernizr-2.0.6-development-only.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/application.js")" type="text/javascript"></script>
+    @Html.AjaxAntiForgeryToken()
+</head>
+
+<body>
+	<div class="row">
+	<header>
+		
+	  <div class="logo col_7 col">Xangô Blog</div><!-- logo col_7 -->
+		
+	  @Html.Partial("Menu")
+	  <div class="clear"></div><!-- clear -->
+	</header>
+</div><!-- row -->
+
+<!-- this section shows you most of the styled elements from the general stylesheet -->
+<section class="row" id="styled">
+	<div class="col col_11" id="content">
+		@RenderBody()
+		<!-- -->
+	</div><!-- col_11 -->
+  <div class="col col_5">
+			<div class="side_element">
+				@RenderSection("lastArticles")
+			</div><!-- side_element -->
+			<div class="side_element">
+				<h2>Side Element Title</h2>
+				<p>Duis ac arcu ante, at lacinia dui. Ut eget justo in nulla rutrum mollis. Mauris euismod justo et smod justo smod justo quam bibendum laoreet volutpat lorem mollis. In hac habitasse platea dictumst. Mauris ut eleifend neque. Duis nulla metus, tempus nec varius quis, tincidunt consectetur nisi. Donec rhoncus quam vel quam bibendum rutrum. Mauris et commodo felis. Nam varius eleifend nulla quis sagittis. Quisque id tortor at dolor dictum interdum.</p>
+			</div><!-- side_element -->
+	</div><!-- col_5 -->
+</section><!-- row -->
+
+<footer class="row">
+
+	<div class="col_16 col">all rights reserved &copy; <a href="http://www.enavu.com">enavu network</a> | 52framework the framework from the future</div>
+
+</footer>    
+</body>
+</html>

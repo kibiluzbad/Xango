@@ -1,0 +1,19 @@
+<configuration>
+	<configSections>
+		<sectionGroup name="xangoGroup">
+			<section name="xangoConfiguration"
+							 type="Xango.Data.NHibernate.Configuration.XangoConfigurationSection, Xango.Data.NHibernate"
+							 allowLocation="true"
+							 allowDefinition="Everywhere"
+							 />
+		</sectionGroup>
+	</configSections>
+	<xangoGroup>
+		<xangoConfiguration
+			domainAssemblyName="[Domain DLL]"
+			isWeb="true"
+			database="sqlite"
+			validationAssemblyName="[Validation DLL]"
+			overrideMapAssemblyName="[Override Map DLL]" />
+	</xangoGroup>
+</configuration>

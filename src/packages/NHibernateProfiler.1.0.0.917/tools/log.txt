@@ -1,0 +1,53 @@
+2011-10-14 11:41:58,087 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 11/11/2011 17:38:36
+2011-10-14 11:41:58,525 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2011-10-14 11:42:01,534 [12] INFO  HibernatingRhinos.Profiler.Client.App [(null)] - Checking for updates...
+2011-10-14 11:42:23,316 [9] ERROR HibernatingRhinos.Profiler.Client.App [(null)] - Error while checking for updates: System.Net.WebException: Impossível conectar-se ao servidor remoto ---> System.Net.Sockets.SocketException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu 216.121.112.229:80
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   em System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.HttpWebRequest.GetResponse()
+   em NAppUpdate.Framework.Sources.SimpleWebSource.GetUpdatesFeed() na z:\Projects\NAppUpdate\src\NAppUpdate.Framework\Sources\SimpleWebSource.cs:linha 36
+   em NAppUpdate.Framework.UpdateManager.CheckForUpdates(IUpdateSource source, Action`1 callback) na z:\Projects\NAppUpdate\src\NAppUpdate.Framework\UpdateManager.cs:linha 133
+   em NAppUpdate.Framework.UpdateManager.<>c__DisplayClass2.<CheckForUpdateAsync>b__1() na z:\Projects\NAppUpdate\src\NAppUpdate.Framework\UpdateManager.cs:linha 175
+2011-11-23 09:46:36,319 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 11/11/2011 17:38:36
+2011-11-23 09:46:36,491 [1] WARN  Rhino.Licensing.LicenseValidator [(null)] - Could not validate existing license
+<?xml version="1.0" encoding="utf-8"?>
+<license id="d4635a81-82af-4374-9145-3bef93968fae" expiration="2011-11-11T17:38:36.0121300" type="Trial" prof="NHProf">
+  <name>Renata Fan</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>hbw0cZ23MW8+X/ehse6u+gecdhM=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>j9gvtihObcRZkA7G6xc6rOW+Xia76zNLr4MWZ6+qrfj3LLIN5MP1e/xxkAdyEvcOS0q5w5UFfld3Yl6At5QqBNRVH+c3oI+9SaNM9R68yp7sO3alZaubPy1uFMXBcgAt+Oa0IbQoPKn/bw2uUyg5MWL1BEShxlWxQQQrYrayhzg=</SignatureValue>
+  </Signature>
+</license>
+2011-11-23 09:46:53,512 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 11/11/2011 17:38:36
+2011-11-23 09:46:53,512 [1] WARN  Rhino.Licensing.LicenseValidator [(null)] - Could not validate existing license
+<?xml version="1.0" encoding="utf-8"?>
+<license id="d4635a81-82af-4374-9145-3bef93968fae" expiration="2011-11-11T17:38:36.0121300" type="Trial" prof="NHProf">
+  <name>Renata Fan</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>hbw0cZ23MW8+X/ehse6u+gecdhM=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>j9gvtihObcRZkA7G6xc6rOW+Xia76zNLr4MWZ6+qrfj3LLIN5MP1e/xxkAdyEvcOS0q5w5UFfld3Yl6At5QqBNRVH+c3oI+9SaNM9R68yp7sO3alZaubPy1uFMXBcgAt+Oa0IbQoPKn/bw2uUyg5MWL1BEShxlWxQQQrYrayhzg=</SignatureValue>
+  </Signature>
+</license>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Xango</id>
+    <version>1.0.1.1</version>
+    <authors>kibiluzbad</authors>
+    <owners>kibiluzbad</owners>
+    <licenseUrl>http://bitbucket.org/kibiluzbad/xango/src/740b974898b9/LICENSE.txt</licenseUrl>
+    <projectUrl>http://bitbucket.org/kibiluzbad/xango</projectUrl>
+    <iconUrl>http://nuget.org/Media/Default/Packages/Xango/1.0.0/Xang%C3%B4.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Architectural foundation for building ASP.NET MVC3 applications whit NHibernate very fast.</description>
+    <tags>mvc NHibernate FluentNhibernate</tags>
+    <dependencies>
+      <dependency id="LinqSpecs" version="1.0" />
+      <dependency id="Castle.Core" version="2.5.2" />
+      <dependency id="CommonServiceLocator" version="1.0" />
+      <dependency id="FluentNHibernate" version="1.2.0.712" />
+      <dependency id="Iesi.Collections" version="3.1.0.4000" />
+      <dependency id="NHibernate" version="3.1.0.4000" />
+      <dependency id="NHibernate.Castle" version="3.1.0.4000" />
+      <dependency id="NHibernate.Validator" version="1.3.1.4000" />
+      <dependency id="AutoMapper" version="2.0.0" />
+      <dependency id="Ifa" version="1.0" />
+    </dependencies>
+  </metadata>
+</package>

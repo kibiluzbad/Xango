@@ -1,0 +1,43 @@
+header {padding-top:10px; border-bottom:2px solid #525252; margin-bottom:10px;}
+header .logo {font-size:2.52em;}
+header nav ul {float:right;}
+header nav ul li {float:left;}
+header nav ul li a {display:block; padding:5px 15px; border-right:1px solid #eee; font-size:1.052em; font-family:Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+header nav ul li a:hover {background-color:#eee; border-right:1px solid #ccc; text-shadow:-1px -1px 0px #fff;}
+header nav ul li:last-child a {border-right:none;}
+		
+article {border-bottom:5px double #ccc; margin-bottom:10px; padding-bottom:10px;}
+article a h3 {border-bottom:2px solid #eee;}
+article a {text-decoration:none;}
+		
+article .date {display:block; float:left; border:1px dashed #ccc; margin-right:15px; margin-bottom:10px; background-color:#fff;}
+article .date .day {font-family:Georgia, "Times New Roman", Times, serif; font-size:2.5em; text-align:center; display:block; padding:1px 10px;}
+article .date .month {font-family:Arial, Helvetica, sans-serif; background-color:#eee; border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; font-weight:600; color:#525252;  display:block; text-align:center; padding:3px;}
+article .date .year {font-family:Verdana, Geneva, sans-serif; font-size:10px; text-align:center; color:#ccc; display:block;}
+		
+article .more {display:block; float:right; background-color:#eee; text-decoration:none; padding:3px;}
+		
+ul.recent {list-style:none; margin:0px; padding:0px;}
+ul.recent li {margin-bottom:5px; font-size:1.052em; border-bottom:1px solid #eee; padding-bottom:5px;}
+		
+.side_element {margin-bottom:5px; padding-bottom:5px; border-bottom:1px dashed #ccc;}
+		
+h2 {border-bottom:1px dashed #ccc;}
+		
+footer {text-align:center; color:#666; font-size:0.9em; padding:4px 0px; border-top:1px solid #525252;}
+
+article {border-bottom:5px double #ccc; margin-bottom:10px; padding-bottom:10px;}
+article .information {color:#666; margin-bottom:10px; border-top:1px dashed #eee; border-bottom:1px solid #eee; display:block; text-align:center; padding:3px 0px;}
+ul.recent {list-style:none; margin:0px; padding:0px;}
+ul.recent li {margin-bottom:5px; font-size:1.052em; border-bottom:1px solid #eee; padding-bottom:5px;}
+h1 {font-size:2.052em;}
+h2 {border-bottom:1px dashed #ccc;}
+.comments {list-style:none; margin:0px; padding:0px;}
+.comments li {border-left:2px solid #eee; padding-left:5px; margin-bottom:5px;}
+.comments li .comment_information {font-family:Verdana, Geneva, sans-serif; border-bottom:1px dashed #ccc; margin-bottom:5px; display:block; color:#666;}
+.input-validation-error{border:1px solid #FF4A4A !important;background-color:#FFEDED !important;}
+.edit, .delete{margin-right:5px;}
+nav.paginator{text-align:center;}
+nav.paginator ul a {border:1px solid #ccc;padding:5px;margin-right:2px;padding-right:20px;padding-left:20px;}
+nav.paginator ul .currentPage {border:1px solid #ccc;padding:3px;margin-right:2px;}
+nav.paginator ul .gap{margin-right:2px;}
