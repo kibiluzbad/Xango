@@ -1,8 +1,0 @@
-﻿@model IEnumerable<Blog.UI.Models.PostViewModel>
-<h2>Recent Articles</h2>
-<ul class="recent">
-@foreach (var post in Model)
-{ 
-    <li><a href='@Url.Action("Details", "Posts", new { id = post.Slug})' title='@post.Title'>@post.Title</a></li>    
-}
-</ul>	
