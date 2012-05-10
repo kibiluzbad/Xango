@@ -20,17 +20,15 @@ namespace Xango.Mvc.Extensions
                 : new MvcHtmlString("");
         }
 
-        public static string Cycle(this HtmlHelper html, params string[] options)
+        public static string Cycle(this HtmlHelper html, params string[] strings)
         {
-            var last = ""+html.ViewContext.TempData["_lastCycle"];
+            var context = html.ViewContext.HttpContext;
+            var index = Convert.ToInt32(context.Items["cycle_index"]);
 
-            last = options.FirstOrDefault(c => c != last);
+            string returnValue = strings[index % strings.Length];
 
-            if (string.IsNullOrWhiteSpace(last))
-                last = options.First();
-
-            html.ViewContext.TempData["_lastCycle"] = last;
-            return last;
+            html.ViewContext.HttpContext.Items["cycle_index"] = ++index;
+            return returnValue;
         }
 
         public static MvcHtmlString EditLinkButtonForGrid(this HtmlHelper html,
